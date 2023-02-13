@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios HTML</title>
+
+    <style>
+        h1{
+            font-size: 35px;
+            color: white;
+            text-align: center;
+            text-shadow: 3px 2px 3px gray;
+        }
+
+        h2, h3, h4, h5, h6{
+            font-family:Arial, Helvetica, sans-serif;
+            color: white;
+            text-align: center;
+            text-shadow: 3px 2px 3px gray;  
+        }
+
+        #posicaoImagem2{
+            position: absolute;
+            right: 100px;  
+	        top: 70px; 
+
+        }
+
+        p{
+            font-family:Arial, Helvetica, sans-serif;
+            color: white;
+            text-align: center;
+            text-shadow: 3px 2px 3px gray;  
+        }
+    </style>
+</head>
+<body style="background-color: pink;">
+    <header>
+        <h1>Exercícios HTML</h1>
+        <h2 style="font-size: 17px;">Exercícios feitos na introdução do curso de Web Moderno - Udemy</h2>
+    </header>
+    <nav>
+        <a href="exercicioshtml/teste.html"> 00 - Teste </a> |
+        <a href="exercicioshtml/texto.1.html"> 01 - Texto 1 </a> |
+        <a href="exercicioshtml/texto2.html"> 02 - Texto 2 </a>
+    </nav>
+    <section id="conteudo"></section>
+    <!--javascript para pegar conteúdo do link clicado e apresentar na página atual-->
+    <script> 
+        document.querySelectorAll('a').forEach(link => {
+            link.onclick = function(e) {
+                e.preventDefault()
+
+                const conteudo = document.getElementById('conteudo')
+                fetch(link.href)
+                    .then(resp => resp.text())
+                    .then(html => conteudo.innerHTML = html)
+            }
+        })
+    </script>
+    <img src = "imagemindexteste2-removebg-preview.png" alt = "Test Image"  id="posicaoImagem2" />
+</body>
+</html>
