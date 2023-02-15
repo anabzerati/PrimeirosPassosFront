@@ -1,0 +1,22 @@
+<h1>Links</h1>
+
+<!-- URL Absoluta -->
+<a href="http://www.google.com.br" id="inicio">Google 1</a> <br> <!-- abre na mesma aba -->
+<a href="http://www.google.com.br" target="_blank">Google 2</a> <br> <!-- abre em outra aba-->
+
+<!-- Url Relativa --> <!--para usar, depende de "onde está"/como está acessando-->
+<a href="index.html">Voltar 1</a><br> <!-- tenta abrir index.html normal, problema: se acessar pela pasta de exercícios (sair da página do index), vai tentar achar index.html dentro dessa pasta e vai dar erro-->
+<a href="/index.html">Voltar 2</a><br> <!-- acessa a pasta raiz da aplicação-->
+<a href="../index.html">Voltar 3</a><br> <!-- sai da pasta atual e busca index.html onde está, probelma: se está dentro de duas pastas e quer voltar para o index, tem que fazer ../../ para sair das duas-->
+
+<!-- enviar e-mail -->
+<a href="mailto:email@empresa.com.br">Entre em contato</a> <br>
+<!--Nos links mailto é possível definir também o assunto e um conteúdo inicial que já são inseridos no email. Exemplo "mailto:usuario@google.com?subject=Assunto do email&amp;body=Corpo do email..."-->
+
+<!-- Navegação Via Âncora -->
+<div id="noticia" style="position: absolute; top: 2000px;">
+    <h1>Noticia escondida :)</h1>
+    <a href="#inicio">Voltar para o início</a>
+</div>
+
+<a href="#noticia">Ir Pra Notícia</a> <!-- navegando na própria página, # indica id-->

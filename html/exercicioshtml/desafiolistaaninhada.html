@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+ 
+<link rel="stylesheet" href="http://files.cod3r.com.br/curso-web/tree.css">
+ 
+<!--Lista de Definição-->
+<h1>LISTAS ANINHADAS</h1>
+ 
+<h2 style="text-align: left;"">Projeto</h2>
+<ul class="tree">
+  <li>
+    <span onclick="displayShow_Hide(this)">Backend</span>
+    <ul>
+      <li>
+        <span onclick="displayShow_Hide(this)">app</span>
+        <ul>
+          <li>produto.js</li>
+          <li>usuario.js</li>
+          <li>venda.js</li>
+        </ul>
+      </li>
+      <li>
+        <span onclick="displayShow_Hide(this)">config</span>
+        <ul>
+          <li>banco.js</li>
+          <li>rotas.js</li>
+          <li>servidor.js</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <span onclick="displayShow_Hide(this)">FrontEnd</span>
+    <ul>
+      <li>
+        <span onclick="displayShow_Hide(this)">public</span>
+        <ul>
+          <li>app.css</li>
+          <li>app.js</li>
+          <li>index.html</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+ 
+<script>
+  function displayShow_Hide(obj)
+  {
+    const item = obj.nextElementSibling;
+    item.style.display = item.style.display == 'none' ? 'block' : 'none';
+  }
+</script>
