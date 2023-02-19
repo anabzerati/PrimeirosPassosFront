@@ -1,3 +1,66 @@
 <table> <!--tag que representa tabela-->
     <caption>Produtos</caption> <!--opcional, o que a tabela representa-->
+    <thead> <!--cabeçalho da tabela-->
+        <tr> <!--table row-->
+            <th>Produto</th>
+            <th>Preço</th>
+            <th>Quantidade</th>
+            <th>Total</th>
+        </tr>
+    </thead>
+    <tbody> <!--corpo da tabela-->
+        <tr>
+            <td>Hello Kitty Plushie</td> <!--table data - produto -->
+            <td>67,90</td> <!--preço-->
+            <td>10</td> <!--quantidade-->
+            <td>679,00</td> <!--total-->
+        </tr>
+        <tr>
+            <td>Fone de ouvido</td>
+            <td>380,90</td>
+            <td>1</td>
+            <td>380,90</td>
+        </tr>
+        <tr>
+            <td>Caneta com cheirinho</td>
+            <td>1,50</td>
+            <td>10</td>
+            <td>15,00</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="3">Total</td>
+            <td>1074,90</td>
+        </tr>
+    </tfoot>
 </table>
+
+<style>
+    table{
+        border-collapse: collapse;
+    }
+
+    caption{
+        font-size: 25px;
+        color: black;   
+    }
+
+    th, td{
+        padding: 10px;
+    }
+
+    thead tr{
+        border-bottom: solid 3px #444;
+    }
+
+    tbody tr:hover{
+        background-color: #dedede;
+    }
+
+    tfoot{
+        background-color: #444;
+        color: #fff;
+        font-weight: bold;
+    }
+</style>
