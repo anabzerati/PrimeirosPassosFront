@@ -4,13 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Origem CSS: Externo, Interno e Inline</title>
-    <style>
-        /* ... */
+    <style> /*origem interna*/
+        body{
+            background-color: azure;
+        }
     </style>
+    <!-- origem externa -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    <h1>E agora?</h1>
+<body style="background-color: antiquewhite;"> <!-- inline -->
+    <h1>E agora?</h1> 
 </body>
 
 </html>
+
+<!-- obs: não há preferência entre as origens, será aplicada na página a última parte processada. Assim, o inline acaba se sobrepondo aos outros-->
