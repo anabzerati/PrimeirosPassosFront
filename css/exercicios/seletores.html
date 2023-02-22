@@ -4,9 +4,90 @@
 <head>
     <meta charset="UTF-8">
     <title>CSS Selectors</title>
-    <link rel="stylesheet" href="css/tag.css">
+    <link rel="stylesheet" href="tags/tag.css">
     <style>
-        /* ... */
+         /*Seletor Universal
+        * { 
+            color: #ff0;
+            background-color: skyblue;
+        } */
+
+        /*Seletor de Classe
+        .tag { 
+            color: #ff0;
+            background-color: skyblue;
+        } */
+        
+        /*Seletor de Id
+        #aprovados { 
+            color: #ff0;
+            background-color: skyblue;
+        } */
+ 
+        /*Seletor de Id aninhado*/
+        #aninhado>div {
+            color: yellowgreen;
+            background-color: rgb(163, 149, 243);
+        }
+ 
+        /*Seletor de descendente
+        #aninhado span {
+            background-color: tomato;
+        } */
+ 
+        /*Seletor de irmão adjacentes*/
+        p+ul {
+            color: silver;
+        }
+ 
+        /*Seletor de irmãos adjacentes e não adjacentes*/
+        p~ul {
+            color: yellowgreen;
+        }
+ 
+        p~ol {
+            color: black;
+        }
+ 
+        /*Seletor de Atributo*/
+        [feira] {
+            background-color: rgb(240, 119, 240);
+        }
+ 
+        /*Seletor de Atributo Específico*/
+        [feira=casa] {
+            color: yellowgreen;
+        }
+ 
+        /*Seletor de Atributos Específicos e Compostos*/
+        [feira~=escritorio] {
+            color: yellowgreen;
+        }
+ 
+        /*Seletor de Atributo por 'Termos'*/
+        [feira*=presa] {
+            color: rgb(252, 104, 50);
+        }
+ 
+        /* Dentro da Section primeiro elemento | section nolabel
+        section > :nth-child(1) {
+            color: darkblue;
+        } */
+ 
+        /* Dentro da Section elementos ímpares | section nolabel*/
+        section> :nth-child(odd) {
+            color: rgb(84, 84, 175);
+        }
+ 
+        /*ol sem nolabel.. pares viram ímpares.. pq label =1*/
+        ol :nth-child(even) {
+            color: rgb(253, 122, 74);
+        }
+ 
+        /*2o span da section*/
+        section>span:nth-of-type(2) {
+            background-color: rgb(243, 101, 208);
+        }
     </style>
 </head>
 
@@ -38,7 +119,7 @@
             </div>
         </div>
     </div>
-    <script src="js/tag.js"></script>
+    <script src="tags/tag.js"></script>
 </body>
 
 </html>
