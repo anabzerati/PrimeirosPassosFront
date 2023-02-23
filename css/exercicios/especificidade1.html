@@ -4,8 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <title>Especificidade CSS</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600&display=swap" rel="stylesheet">
     <style>
         /* https://developer.mozilla.org/pt-BR/docs/Web/CSS/Specificity */
+        /*Em linhas gerais:
+            1- regra com !important
+            2- seletores mais específicos
+            3- última regra processada (para empate)
+        */
+
+        p{
+            background-color: #aaa;
+        }
+
+        .observacao{ /*mais específico que p, sobrescreve*/
+            background-color: gray;
+            border: dashed 5px;
+            padding: 200px !important; /*ainda que o padding de baixo seja mais específico, esse é o aplicado pelo impostant*/
+            font-size: 40px;
+        }
+
+        p.observacao{ /*mais específico ainda*/
+            padding: 2px;
+            background: linear-gradient(to right, red, yellow);
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+        }
     </style>
 </head>
 

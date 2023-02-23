@@ -24,23 +24,23 @@
             background-color: skyblue;
         } */
  
-        /*Seletor de Id aninhado*/
+        /*Seletor de Id aninhado (div diretamente depois de aninhado)*/
         #aninhado>div {
             color: yellowgreen;
             background-color: rgb(163, 149, 243);
         }
  
-        /*Seletor de descendente
+        /*Seletor de descendente (span dentro de aninhado)
         #aninhado span {
             background-color: tomato;
         } */
  
-        /*Seletor de irmão adjacentes*/
+        /*Seletor de irmão adjacentes (ul diretamente seguido de p, ambos filhos do mesmo pai)*/
         p+ul {
             color: silver;
         }
  
-        /*Seletor de irmãos adjacentes e não adjacentes*/
+        /*Seletor de irmãos adjacentes e não adjacentes (ul imrão de p)*/
         p~ul {
             color: yellowgreen;
         }
@@ -51,25 +51,25 @@
  
         /*Seletor de Atributo*/
         [feira] {
-            background-color: rgb(240, 119, 240);
+            background-color: rgb(245, 136, 218);
         }
  
-        /*Seletor de Atributo Específico*/
+        /*Seletor de Atributo Específico (atributo feira com valor casa nele)*/
         [feira=casa] {
             color: yellowgreen;
         }
  
-        /*Seletor de Atributos Específicos e Compostos*/
+        /*Seletor de Atributos Específicos e Compostos (atributo feira que tenha escritorio)*/
         [feira~=escritorio] {
             color: yellowgreen;
         }
  
-        /*Seletor de Atributo por 'Termos'*/
+        /*Seletor de Atributo por 'Termos' (busca atributos de feira que contenham 'presa')*/
         [feira*=presa] {
             color: rgb(252, 104, 50);
         }
  
-        /* Dentro da Section primeiro elemento | section nolabel
+        /* Dentro da Section primeiro elemento | section nolabel (obs: label conta como primeiro elemento)
         section > :nth-child(1) {
             color: darkblue;
         } */
@@ -79,14 +79,14 @@
             color: rgb(84, 84, 175);
         }
  
-        /*ol sem nolabel.. pares viram ímpares.. pq label =1*/
+        /*ol com label.. pares viram ímpares.. pq label =1*/
         ol :nth-child(even) {
             color: rgb(253, 122, 74);
         }
  
         /*2o span da section*/
         section>span:nth-of-type(2) {
-            background-color: rgb(243, 101, 208);
+            background-color: rgb(245, 136, 218);
         }
     </style>
 </head>

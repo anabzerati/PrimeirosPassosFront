@@ -4,8 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <title>Box Model</title>
+    <!-- entre o conteúdo e a borda há o padding(pode estar em todas as dimensões ou só uma)
+         entre a borda e os demais componentes há a margem. Espaçamento entre vizinhos-->
     <style>
-        /* ... */
+        body{
+            font-size: 80px;
+            margin: 0;
+        }
+
+        .c1{
+            background-color: orange;
+        }
+
+        .c2{
+            background-color: skyblue;
+        }
+
+        .c3{
+            background-color: tomato;
+        }
+
+        div{
+            float: left;
+            padding: 10px 50px 100px 150px;
+            padding: 100px 50px;
+            padding: 50px;
+            margin: 0px 20px;
+            border: solid 15px black;
+        }
     </style>
 </head>
 

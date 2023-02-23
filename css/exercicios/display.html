@@ -5,7 +5,39 @@
     <meta charset="UTF-8">
     <title>Display</title>
     <style>
-        /* ... */
+        body{
+            font-size: 40px;
+            color: white;
+            background-color: rgb(253, 161, 128);
+        }
+
+        ul{
+            padding: 0;
+        }
+
+        div{
+            background-color: rgb(86, 133, 106);
+        }
+
+        span{
+            background-color: rgb(134, 193, 252);
+        }
+
+        li{
+            background-color: rgb(204, 120, 204);
+        }
+
+        div, span, li{
+            width: 50%;
+            width: 200px;
+            height: 80px; /*altura e largura não mudam no span*/
+            padding-top: 30px;
+            text-align: center;
+            display: block; /*todos viram blocos, largura e altura agora aplicadas no span também*/
+            display: inline; /*todos na mesma linha. A caixa em volta é do tamanho da escrita*/
+            display: inline-block; /*mantém na mesma linha mas trata como bloco, altura e largura definidas influenciam*/
+            
+        }
     </style>
 </head>
 
