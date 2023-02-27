@@ -5,18 +5,35 @@
     <meta charset="UTF-8">
     <title>Altura e Largura</title>
     <style>
+        html{
+            height: 100%;
+        }
+
         body {
             font-size: 40px;
-            background-color: coral;
+            background-color: rgb(252, 157, 157);
+            height: 100%;
+            margin: 0;
         }
 
         div {
-            background-color: seagreen;
+            background-color: rgb(175, 238, 202);
         }
 
         span {
-            background-color: dodgerblue;
+            background-color: rgb(139, 196, 253);
         }
+
+        span, div{
+            width: 49%; /*span não muda*/
+            height: 50%; /*sozinho não faz nada. O 50% diz respeito ao body. Como tem 2 elementos no body, cada um é 50%*/
+            height: 250px;
+            /*para conseguir usar porcentagens em altura: definir html e body como 100% (ocupam toda a tela). Daí div 50% representa metade*/
+            display: inline-block;
+            height: 50%; /*pela quebra de linha, ambos só cabem um ao lado do outro se sobrar espaço - largura 49%*/
+        }
+
+        
     </style>
 </head>
 

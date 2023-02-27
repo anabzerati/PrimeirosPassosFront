@@ -1,3 +1,7 @@
+<!--The float CSS property places an element on the left or right side of its container, allowing text and inline elements
+    to wrap around it. The element is removed from the normal flow of the page, though still remaining a part of the flow 
+    (in contrast to absolute positioning).-->
+
 <!DOCTYPE html>
 <html>
 
@@ -10,19 +14,29 @@
         }
 
         .c1 {
-            background-color: red;
+            background-color: rgb(248, 84, 199);
+            float: right; /*quando faz assim, os outros elementos "desconsideram* ele (c2 fica na mesma linha)*/
         }
 
         .c2 {
-            background-color: green;
+            background-color: rgb(70, 124, 70);
+            clear: right; /*agora c2 deixa o espaço de c1 vazio e fica embaixo*/
+            float: left;
         }
         
         .c3 {
-            background-color: blue;
+            background-color: rgb(136, 136, 252);
+            clear: both;
         }
 
         .c4 {
-            background-color: orange;
+            background-color: rgb(250, 205, 120);
+            float: right;
+        }
+
+        div{
+            height: 150px;
+            width: 150px;
         }
     </style>
 </head>
