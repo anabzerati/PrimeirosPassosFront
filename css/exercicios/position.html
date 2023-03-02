@@ -5,7 +5,66 @@
     <meta charset="UTF-8">
     <title>Position</title>
     <style>
-        /* ... */
+        div{
+            font-size: 60px;
+            padding: 30px;
+            border: solid 5px #222;
+            /*color: white;*/
+        }
+
+        .static{
+            top: 100px;
+            left: 100px; /*top e left desconsiderados pela posição estática*/
+            background-color: rgb(135, 177, 212);
+        }
+
+        .fixed{
+            position: fixed;
+            bottom: 30px;
+            right: 0px;
+            background-color: rgb(255, 150, 131);
+        }
+
+        .relative1{
+            position: relative;
+            left: 50px;
+            top: 5px; /*5px do anterior*/
+            background-color: rgb(109, 168, 135);
+        }
+
+        .absolute1{
+             position: absolute; /*pode sobrepor outros elementos*/
+             top: 120px;
+             left: 450px;
+             background-color: rgb(243, 170, 243);
+        }
+
+        .relative2{
+            position: relative;
+            left: 250px;
+            top: 2000px;
+            width: 200px;
+            height: 200px;
+            background-color: rgb(117, 128, 139);
+        }
+
+        .absolute2{
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            width: 20px;
+            height: 20px;
+            background-color: rgb(255, 220, 156);
+        }
+
+        /*obs: se tiver um absoluto dentro de outro elemento, colocar relativo no pai pro absoluto não sair da margem*/
+
+        .sticky{
+            position: sticky;
+            background-color: #a5a5a5;
+            top: 0px; /*quando chegar a 0px do top ele trava no lugar*/
+        }
+
     </style>
 </head>
 
