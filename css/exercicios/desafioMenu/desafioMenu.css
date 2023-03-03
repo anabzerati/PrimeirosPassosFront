@@ -1,35 +1,41 @@
 body{
     margin: 0;
+    box-sizing: border-box;
 }
 
-header{
+header{ /*aqui criamos a "barra" definindo altura, posição e cor*/
     width: 100vw;
     position: absolute;
     background-color: #2e2c2c;
     border-bottom: 5px solid rgb(110, 165, 228);
-    display: inline;
-}
-
-.menu{
-    background-color: #2e2c2c;
-    float: left;
-    top: 8px;
+    display: inline-block;
+    top: 0px;
+    padding: 8px 20px;
+    height: 80px;
 }
 
 .logo{
     float: left;
-    background-color: #2e2c2c;
-    width: 300px;
+    height: 50px;
     padding: 10px;
 }
 
+.logo img{
+    height: 100%;
+}
+
+.menu{
+    float: left;
+    top: 10px;
+    padding-left: 30px;
+}
 
 .menu ul li{
-    display: inline;
-    padding: 10px;
+    display: inline-block;
 }
 
 li a{
+    padding: 15px;
     color: white;
     text-decoration: none;
     font-family: Oswald;
@@ -37,27 +43,18 @@ li a{
     margin: 0px 5px;
 }
 
-li{
-    border: solid 5px #2e2c2c;
-    background-color: #2e2c2c;
-    text-align: center;
-}
-
-li:hover, li:active{
+.menu a:hover, .menu a.selected{
     background-color: rgb(110, 165, 228);
-    border: solid 10px rgb(110, 165, 228);
-}
-
-.cabecalho{
-    position: absolute;
-    display: inline-block;
+    border: solid 2px rgb(110, 165, 228);
+    color: black;
 }
 
 .autenticacao{
     display: block;
     position: relative;
     text-align: right;
-    background-color: #2e2c2c;
+    height: 80px;
+    padding: 25px;
 }
 
 .autenticacao a{
@@ -78,6 +75,8 @@ li:hover, li:active{
 }
 
 .menu-toggle{ 
+    height: 40px;
+    width: 40px;
     display: none;
     position: relative;
     float: right;
@@ -94,13 +93,13 @@ li:hover, li:active{
     background-color: #999;
   }
   
-  @media (max-width: 900px){
+  @media (max-width: 960px){
     .autenticacao{ 
         display: none; 
     }
   }
   
-  @media (max-width: 650px){
+  @media (max-width: 800px){
     .menu-toggle{ 
         display: block; 
     }
