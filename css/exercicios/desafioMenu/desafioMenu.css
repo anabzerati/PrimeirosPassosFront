@@ -1,0 +1,110 @@
+body{
+    margin: 0;
+}
+
+header{
+    width: 100vw;
+    position: absolute;
+    background-color: #2e2c2c;
+    border-bottom: 5px solid rgb(110, 165, 228);
+    display: inline;
+}
+
+.menu{
+    background-color: #2e2c2c;
+    float: left;
+    top: 8px;
+}
+
+.logo{
+    float: left;
+    background-color: #2e2c2c;
+    width: 300px;
+    padding: 10px;
+}
+
+
+.menu ul li{
+    display: inline;
+    padding: 10px;
+}
+
+li a{
+    color: white;
+    text-decoration: none;
+    font-family: Oswald;
+    font-size: 1.3em;
+    margin: 0px 5px;
+}
+
+li{
+    border: solid 5px #2e2c2c;
+    background-color: #2e2c2c;
+    text-align: center;
+}
+
+li:hover, li:active{
+    background-color: rgb(110, 165, 228);
+    border: solid 10px rgb(110, 165, 228);
+}
+
+.cabecalho{
+    position: absolute;
+    display: inline-block;
+}
+
+.autenticacao{
+    display: block;
+    position: relative;
+    text-align: right;
+    background-color: #2e2c2c;
+}
+
+.autenticacao a{
+    text-decoration: none;
+    font-family: Oswald;
+    color: white;
+    margin: 8px;
+}
+
+.autenticacao .botao-destaque{
+    border-radius: 25px;
+    padding: 8px 10px;
+    background-color: rgb(255, 30, 0);
+}
+
+.botao-destaque:hover{
+    background-color: rgb(187, 66, 44);
+}
+
+.menu-toggle{ 
+    display: none;
+    position: relative;
+    float: right;
+    margin-right: 70px;
+    top: 10px;
+    background-color: #444;
+    border-radius: 10%;
+    border: solid 1px #666;
+    padding: 6px;
+    font-size: x-small;
+  }
+  
+  .menu-toggle:hover{ 
+    background-color: #999;
+  }
+  
+  @media (max-width: 900px){
+    .autenticacao{ 
+        display: none; 
+    }
+  }
+  
+  @media (max-width: 650px){
+    .menu-toggle{ 
+        display: block; 
+    }
+    .menu{ 
+        display: none; 
+    }
+  }
