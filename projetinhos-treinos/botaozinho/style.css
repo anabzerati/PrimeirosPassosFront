@@ -30,7 +30,7 @@ body{
 .botao::before{
     content: "";
     position: absolute;
-    background-color: rgb(253, 45, 125);
+    background-color: rgba(253, 54, 130, .9);
     width: 0;
     height: 0;
     left: var(--xPos);
