@@ -1,0 +1,57 @@
+body{
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    background-color: lightgray;
+}
+
+.cabecalho{
+    background-color: #333;
+    color: white;
+    border-bottom: solid 5px #4faddb;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img{
+    height: 50px;
+}
+
+.menu{
+    flex-grow: 10; /*ocupa o espaço mais que o resto*/
+}
+
+.menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu li{
+    margin: 0px 10px;
+}
+
+.cabecalho a{
+    text-decoration: none;
+    color: #eee;
+    font-size: 1.3em;
+    padding: 10px 15px;
+}
+
+.menu a:hover{
+    background-color: #4faddb;
+    color: black;
+}
+
+.cabecalho .botao{
+    border-radius: 30px;
+    padding: 10px 25px;
+    margin-right: 10px;
+}
+
+.destaque{
+    background-color: tomato;
+    color: white;
+}
