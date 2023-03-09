@@ -19,6 +19,15 @@
             display: flex;
         }
 
+        .flex-container div{
+            flex-basis: 100px;
+            width: 200px; /*flex-basis tem prioridade*/
+        }
+
+        .flex-container div:nth-child(4){
+            flex: 3 6 100px; /*short cut row shrink basis*/
+        }
+
     </style>
 </head>
 
