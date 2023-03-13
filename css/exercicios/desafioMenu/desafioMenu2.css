@@ -45,13 +45,14 @@ body{
     color: black;
 }
 
-.cabecalho .botao{
+.destaque{
     border-radius: 30px;
     padding: 10px 25px;
     margin-right: 10px;
+    background-color: rgb(253, 63, 30);
+    color: white;
 }
 
-.destaque{
-    background-color: tomato;
-    color: white;
+.destaque:hover{
+    background-color: rgb(146, 37, 18);
 }
