@@ -17,8 +17,26 @@
             align-items: center;
             justify-content: center;
             font-size: 30px;
-            border: solid 5px dodgerblue;
+            border: solid 3px pink;
             background: #fff;
+        }
+
+        body{
+            display: grid;
+            grid-template-columns: [inicio] 1fr 
+            [meio-1] 1fr 
+            [meio-2] 1fr [fim];
+            grid-template-rows: repeat(3, 1fr);
+            column-gap: 10px;
+            row-gap: 10px;
+            gap: 20px 10px;
+        }
+
+        .d1{
+            grid-column-start: meio-2;
+            grid-column-end: fim;
+            grid-column: meio-1 / fim;
+            grid-row: 1 / span 2;
         }
     </style>
 </head>
